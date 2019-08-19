@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #form-container {
+        margin: auto;
+        width: 50%;
+      }
+      .form-row {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+      <div id="form-container">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">This is a survey form to submit for credit.</p>
+        <form id="survey-form">
+          <div class="form-row">
+            <label id="name-label">Name:<input id="name" type="text" placeholder="Enter your name" required></label>
+          </div>
+          <div class="form-row">
+            <label id="email-label">Email:<input id="email" type="email" placeholder="Enter your email" required></label>
+          </div>
+          <div class="form-row">
+            <label id="number-label">Number:<input id="number" type="number" min="1" max="10" placeholder="Enter a number between 1 and 10"></label>
+          </div>
+          <div class="form-row">
+            <select id="dropdown">
+              <option value="option-1">Option 1</option>
+              <option value="option-2">Option 2</option>
+             </select>
+          </div>
+          <div class="form-row">
+            <p>Do you use any of the following languages? Check all that apply</p>
+            <label>Python: <input type="checkbox" name="used-languages" value="python"></label><br>
+            <label>Java: <input type="checkbox" name="used-languages" value="java"></label><br>
+            <label>Javascript: <input type="checkbox" name="used-languages" value="javascript"></label>
+          </div>
+          <div class="form-row">
+            <p>Is this technically worth a passing grade?</p>
+            <label>Yes: <input type="radio" name="should-pass" value="yes"></label><br>
+            <label>No: <input type="radio" name="should-pass" value="no"></label>
+          </div>
+          <div class="form-row">
+            <p>Do you have any further comments?</p>
+            <textarea rows="4" cols="50"></textarea>
+          </div>
+          <div class="form-row"><button type="submit" id="submit">Submit</button></div>
+        </form>
+      </div>
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
